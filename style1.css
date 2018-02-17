@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+h2{
+  white-space: nowrap;
+  padding-right: 10px;
+}
+.example{
+  margin: auto;
+  display: flex;
+  width: 700px;
+}
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 100%;
+  background: #f1f1f1;;
+  flex-grow: 1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 100px;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row{
+  display: flex;
+  flex-direction: row; 
+}
+img{
+  height: 150px;
+  width: 130px;
+}
+.checked{
+  color: gold;
+}
+.side {
+   display:inline-block;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.star{
+  padding-left: 25px; 
+}
