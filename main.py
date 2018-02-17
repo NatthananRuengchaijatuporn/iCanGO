@@ -42,10 +42,8 @@ def search():
     return render_template('search_result.pug', location=q.title(), data=test_data)
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1] == 'debug':
-        app.debug = True
-        app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
-        app.run('0.0.0.0',port=8080,threaded=True)
-    else:
-        app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
-        app.run()
+    app.debug = True
+    app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
+    app.run('0.0.0.0',port=8080,threaded=True)
+else:
+    app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
