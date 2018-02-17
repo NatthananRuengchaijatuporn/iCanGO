@@ -1,16 +1,21 @@
-* {
-  box-sizing: border-box;
+html {
+  font-family: sans-serif;
 }
-h2{
+
+.head {
+  font-size: 2em;
+  color: #ACACAC;
   text-align: center;
+  margin-top: 5rem;
 }
-.example{
+
+.searchbar {
   margin: auto;
   display: flex;
   width: 500px;
 }
-/* Style the search field */
-form.example input[type=text] {
+
+.searchbar input[type=text] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -19,8 +24,7 @@ form.example input[type=text] {
   flex-grow: 1;
 }
 
-/* Style the submit button */
-form.example button {
+.searchbar button {
   float: left;
   width: 50px;
   padding: 10px;
@@ -28,17 +32,10 @@ form.example button {
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
+  border-left: none;
   cursor: pointer;
 }
 
-form.example button:hover {
+.searchbar button:hover {
   background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
 }
