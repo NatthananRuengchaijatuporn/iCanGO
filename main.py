@@ -6,7 +6,6 @@ import json
 app = Flask(__name__, static_url_path='')
 app.config['SECRET_KEY'] = '\x99\x11\xfaa\xf6\x9f'
 
-
 test_data  = [
     {
         'profile': 'img/cherprang.jpg',
@@ -42,10 +41,11 @@ def search():
         return redirect(url_for('index'))
     return render_template('search_result.pug', location=q.title(), data=test_data)
 
-
 if __name__ == '__main__':
-    app.debug = True
-    app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
-    app.run('0.0.0.0',port=8080,threaded=True)
-else:
-    app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
+    if len(sys.argv) > 1 and sys.argv[1] == 'debug':
+        app.debug = True
+        app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
+        app.run('0.0.0.0',port=8080,threaded=True)
+    else:
+        app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
+        app.run()
