@@ -1,0 +1,134 @@
+html,body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.head {
+  font-size: 2em;
+  color: #ACACAC;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.searchbar {
+  margin: auto;
+  display: flex;
+  width: 500px;
+}
+
+.searchbar input[type=text] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid grey;
+  width: 100%;
+  background: #f1f1f1;;
+  flex-grow: 1;
+}
+
+.searchbar button {
+  float: left;
+  padding: .7em;
+  background: #707070;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background-color: #434343;
+}
+
+nav {
+  display: flex;
+  background-color: #BC3333;
+  padding: .7rem;
+  color: #FFF;
+  font-size: 1.5rem;
+  vertical-align: bottom;
+}
+nav .logo {
+  flex-grow:1;
+  margin-top: .25em;
+  margin-left: 1em;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+}
+.result .item {
+  flex-grow: 1;
+  max-width: 33%;
+  min-width: 20rem;
+  padding: 1em;
+}
+.result .inside {
+  border-top: 2px #FF4848 solid;
+  border-bottom:2px #FF4848 solid;
+}
+.result .top {
+  padding: .5em;
+  padding-bottom: 0;
+  display: flex;
+}
+.result .top .right {
+  flex-grow: 1;
+}
+.result .top .profile-pic {
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+  margin-right: 1em;
+}
+.result .top .owner {
+  font-size: 1em;
+  color: #CCC;
+}
+.title {
+  font-size: 1.5em;
+  position: relative;
+}
+.title .overlay-top {
+  top:0;left:0;
+  color: #FFF;
+  overflow: hidden;
+  position: absolute;
+  width: 0%;
+  white-space: nowrap;
+  transition: ease-out 0.2s;
+}
+.item:hover .title .overlay-top {
+  width: 100%;
+}
+.inside {
+  background: linear-gradient(to left, #FFF 50%, #FF4848 50%, #FF4848);
+  transition: ease-out 0.2s;
+  background-size:200% 1px;
+  background-position:100%;
+}
+.item:hover .inside {
+  background-position:0%;
+  /*box-shadow: inset 50rem 0 0 0 #FF4848;*/
+}
+.result .route {
+  height: 20rem;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #EEE;
+}
+.rating {
+  position: relative;
+  font-size: 1.5em;
+  width: 4.2em;
+  margin: auto;
+  color: #898989;
+}
+.rating .overlay-top {
+  top:0;left:0;
+  color: #FFA200;
+  overflow: hidden;
+  position: absolute;
+}
