@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		title= location+" - iCanGO"
+		link(rel="stylesheet",type="text/css",href="css/style.css")
+		link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+	body
+		nav
+			.logo= "@"+location
+			form.searchbar(method="GET",action="search")
+				input(type="text",placeholder="Filter ...",name="search")
+				button(type="submit") Filter
+			br
+		.result
+			each i in data
+				.item
+					.inside
+						.top
+							.profile-pic(style="background-image:url('"+i.profile+"')")
+							.right
+								.owner= i.owner
+								.title
+									.overlay-btm= i.title
+									.overlay-top= i.title
+						.rating
+							.overlay-btm ★★★★★
+							.overlay-top(style="width:%.1f%%"%(i.rating)) ★★★★★
+					.route(style="background-image:url('"+i.route_img+"')")

@@ -1,13 +1,23 @@
 html,body {
   font-family: sans-serif;
   margin: 0;
+  height: 100%;
+}
+
+.allcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
 }
 
 .head {
   font-size: 2em;
   color: #ACACAC;
-  text-align: center;
-  margin-top: 5rem;
+  background-image: url('/img/logo.svg');
+  width: 500px;
+  height: 200px;
+  margin:auto;
 }
 
 .searchbar {
