@@ -1,0 +1,26 @@
+#itinerary{
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 30px;
+}
+div > img{
+	width: 400px;
+	height: 360px;
+	padding: 30px 10px 0px 20px;
+}
+.column{
+	padding-left: 30px;
+}
+nav{
+  background-color: #BC3333;
+
+  vertical-align: bottom;
+}
+h4{
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 30px;
+}
+.add{
+    text-align: center;
+}
