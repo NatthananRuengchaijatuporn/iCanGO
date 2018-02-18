@@ -16,8 +16,11 @@ img.map{
 .column{
 	padding-left: 30px;
 }
-.container {
-	max-width: 800px !important;
+.col2{
+	width:calc(100% - 450px);
+}
+.container{
+	max-width:1000px !important;
 }
 table {
 	margin-bottom:0 !important;
@@ -28,4 +31,12 @@ table {
 	line-height: 1.5rem;
 	display: inline-block;
 	padding-right: 1rem;
+}
+.detail {
+	font-size: .7em;
+	color: #AAA;
+	text-align: right;
+}
+.btntd {
+	width: 60px;
 }

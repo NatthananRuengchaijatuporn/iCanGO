@@ -51,6 +51,7 @@ def route(route):
 
 if __name__ == '__main__':
     app.debug = True
+    app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     app.jinja_env.add_extension('pypugjs.ext.jinja.PyPugJSExtension')
     app.run('0.0.0.0',port=8080,threaded=True)
 else:
