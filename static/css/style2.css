@@ -1,0 +1,13 @@
+p{
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 30px;
+}
+div > img{
+	width: 400px;
+	height: 380px;
+	padding: 50px 10px 0px 20px;
+}
+.column{
+	padding-left: 30px;
+}
