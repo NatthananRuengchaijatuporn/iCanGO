@@ -5,6 +5,7 @@ import json
 
 app = Flask(__name__, static_url_path='')
 app.config['SECRET_KEY'] = '\x99\x11\xfaa\xf6\x9f'
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 30
 
 test_data  = [
     {
