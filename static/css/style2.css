@@ -21,6 +21,7 @@ img.map{
 }
 .container{
 	max-width:1000px !important;
+	background-color: #fff;
 }
 table {
 	margin-bottom:0 !important;
@@ -32,11 +33,24 @@ table {
 	display: inline-block;
 	padding-right: 1rem;
 }
-.detail {
+.location-type {
 	font-size: .7em;
 	color: #AAA;
-	text-align: right;
+	float: right;
 }
 .btntd {
 	width: 60px;
 }
+.description {
+	font-size: .8em;
+	margin-left: 1em;
+	padding-left: 1em;
+	margin-top: .5em;
+	border-left: 1px solid #AAA;
+}
+body {
+	background-color: #ffe8e8 !important;
+	}
+#nav {
+	background-color: #F7F7F7;
+	}
