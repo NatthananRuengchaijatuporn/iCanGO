@@ -22,7 +22,7 @@ html
 			br
 		.result
 			each i in data
-				.item(onclick="window.location='/route/1';",data-id=i.id)
+				.item(onclick="window.location='/route/%d/%s';"%(i.id,i.title),data-id=i.id)
 					.inside
 						.top
 							.profile-pic(style="background-image:url('"+i.profile+"')")

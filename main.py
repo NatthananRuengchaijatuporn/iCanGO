@@ -46,7 +46,8 @@ def search():
     return render_template('search_result.pug', location=q.title(), data=test_data)
 
 @app.route('/route/<route>')
-def route(route):
+@app.route('/route/<route>/<routename>')
+def route(route,routename=''):
     return render_template('detail.pug')
 
 if __name__ == '__main__':
