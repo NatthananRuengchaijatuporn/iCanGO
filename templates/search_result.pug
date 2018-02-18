@@ -4,16 +4,25 @@ html
 		title= location+" - iCanGO"
 		link(rel="stylesheet",type="text/css",href="css/style.css")
 		link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		script(src="http://code.jquery.com/jquery-3.3.1.slim.min.js",integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=",crossorigin="anonymous")
+		script.
+			$(function(){
+				$('form').submit(function(){
+					event.preventDefault();
+					event.stopPropagation();
+					$('.item[data-id=2]').remove();
+				});
+			});
 	body
 		nav
 			.logo= "@"+location
-			form.searchbar(method="GET",action="search")
+			form.searchbar
 				input(type="text",placeholder="Filter ...",name="search")
 				button(type="submit") Filter
 			br
 		.result
 			each i in data
-				.item(onclick="window.location='/route/1';")
+				.item(onclick="window.location='/route/1';",data-id=i.id)
 					.inside
 						.top
 							.profile-pic(style="background-image:url('"+i.profile+"')")

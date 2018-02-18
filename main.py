@@ -8,23 +8,26 @@ app.config['SECRET_KEY'] = '\x99\x11\xfaa\xf6\x9f'
 
 test_data  = [
     {
+    	'id': 1,
         'profile': 'img/cherprang.jpg',
-        'owner': 'Paperplane0365',
-        'title': 'ทริปสักอย่าง',
+        'owner': 'โอนิกิรินั่งเครื่องบินกระดาษ',
+        'title': 'เที่ยวกรุงคนเดียวก็เฟี้ยวได้',
         'rating': 50,
         'route_img': 'img/route1.jpg'
     },
     {
+    	'id': 2,
         'profile': 'img/jennis.jpeg',
-        'owner': 'lol',
-        'title': 'ทริปสักอย่าง2',
+        'owner': 'หนูมาลีมีลูกแมวเหมียว',
+        'title': 'เที่ยวเชียงใหม่ค่ะ',
         'rating': 90,
         'route_img': 'img/route2.jpg'
     },
     {
+    	'id': 3,
         'profile': 'img/pun.jpg',
-        'owner': 'เครื่องบินกระดาษ 365',
-        'title': 'สนามหลวง ทริปเดิน',
+        'owner': 'ปุณณวิทย์ค่ะ',
+        'title': 'เที่ยวสนามหลวง',
         'rating': 90,
         'route_img': 'img/route3.jpg'
     },
