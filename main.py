@@ -13,7 +13,7 @@ test_data  = [
         'profile': 'img/cherprang.jpg',
         'owner': 'โอนิกิรินั่งเครื่องบินกระดาษ',
         'title': 'เที่ยวกรุงคนเดียวก็เฟี้ยวได้',
-        'rating': 50,
+        'rating': 100,
         'route_img': 'img/route1.jpg'
     },
     {
