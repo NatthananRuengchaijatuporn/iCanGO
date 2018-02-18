@@ -23,9 +23,6 @@ img.map{
 	max-width:1000px !important;
 	background-color: #fff;
 }
-table {
-	margin-bottom:0 !important;
-}
 #nav .back{
 	color: #AAA;
 	font-size: 2em;
@@ -51,6 +48,10 @@ table {
 body {
 	background-color: #ffe8e8 !important;
 	}
-#nav {
-	background-color: #F7F7F7;
-	}
+.table tbody tr:hover{
+	    background-color: #f5c6cb;
+}
+.title{
+	font-size: 1.5em;
+	color: #5f5f5f;
+}
