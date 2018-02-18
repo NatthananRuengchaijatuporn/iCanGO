@@ -16,7 +16,7 @@ html,body {
   color: #ACACAC;
   background-image: url('/img/logo.svg');
   width: 500px;
-  height: 200px;
+  height: 116px;
   margin:auto;
 }
 
@@ -68,11 +68,12 @@ nav .logo {
   display: flex;
   flex-wrap: wrap;
 }
-.result .item {
+.item {
   flex-grow: 1;
   max-width: 33%;
   min-width: 20rem;
   padding: 1em;
+  cursor: pointer;
 }
 .result .inside {
   border-top: 2px #FF4848 solid;

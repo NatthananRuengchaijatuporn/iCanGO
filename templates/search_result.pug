@@ -13,7 +13,7 @@ html
 			br
 		.result
 			each i in data
-				.item
+				.item(onclick="window.location='/route/1';")
 					.inside
 						.top
 							.profile-pic(style="background-image:url('"+i.profile+"')")

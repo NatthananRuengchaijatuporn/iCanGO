@@ -23,9 +23,9 @@ test_data  = [
     },
     {
         'profile': 'img/pun.jpg',
-        'owner': 'ergjkvjtrherglb',
-        'title': 'ทริปสักอย่าง3',
-        'rating': 30,
+        'owner': 'เครื่องบินกระดาษ 365',
+        'title': 'สนามหลวง ทริปเดิน',
+        'rating': 90,
         'route_img': 'img/route3.jpg'
     },
 ]
@@ -40,6 +40,10 @@ def search():
     if q is None:
         return redirect(url_for('index'))
     return render_template('search_result.pug', location=q.title(), data=test_data)
+
+@app.route('/route/<route>')
+def route(route):
+    return render_template('detail.pug')
 
 if __name__ == '__main__':
     app.debug = True
